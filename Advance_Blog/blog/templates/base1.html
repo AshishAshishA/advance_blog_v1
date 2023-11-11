@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Some Great Blog</title>
+    <link rel="stylesheet" href="https://unpkg.com/simpledotcss@2.0.0/simple-v1.css">
+    <link rel="stylesheet" href="#">
+    <style>
+        .nav{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            /* border-radius: 50%; */
+        }
+        .bar{
+            float: left;
+        }
+        .bar a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .bar a:hover{
+            background-color: blue;
+        }
+        h1 a{
+            background-color: wheat;
+            padding: 2%;
+            text-decoration: none;
+        }
+        h1 a:hover{
+            background-color: whitesmoke;
+        }
+        .description #body{
+            background-image:url("/static/images/blog9.png");
+        }
+        .description .read-more a{
+            background-color: blue;
+            padding: 2%;
+            color: white;
+        }
+        .read-more a:hover{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<h1>Some Great Blog</h1>
+
+{% block page_title %}{% endblock page_title %}
+{% block page_content %}{% endblock page_content %}
+</body>
+</html>
